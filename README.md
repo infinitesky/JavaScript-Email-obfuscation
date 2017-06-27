@@ -5,10 +5,10 @@ JavaScript email obfuscation produces a normal, clickable email link for persona
 **While very convenient for most users, it does reduce accessibility, e.g. for text-based browsers and screen readers, or for those not using a JavaScript-enabled browser.**
 
 Implementation and Source:
-JavaScript's trigger events can be used to obfuscate any text or element in HTML. The power of JavaScript to access and manipulate HTML DOM and change all the elements of an HTML document is really awesome. Combined with JavaScript's onclick or onmouseover events, we can toggle the visibility of text on trigger of an event.
+JavaScript's event triggers can be used to obfuscate any text or element in HTML. The power of JavaScript to access and manipulate HTML DOM and change all the elements of an HTML document is really awesome. Combined with JavaScript's onclick or onmouseover events, we can toggle the visibility of text on trigger of an event.
 
 **Here is an example of onclick event to obfuscate  email text:**
-First, we can [convert the email to Hex](http://www.asciitohex.com/) equivalent and then it can be dynamically converted to ASCII text back using JavaScript. So, only value visible to spider crawler is Hex Value. For example, example@example.com can be converted to Hex equivalent of `6578616d706c65406578616d706c652e636f6d`. Use this Hex value in the code and covert it dynamically to ACSII.
+First, we can [convert the email to Hex](http://www.asciitohex.com/) equivalent and later it can be dynamically converted to ASCII text using JavaScript. So, only value visible to spider crawler is Hex Value. For example, example@example.com can be converted to Hex equivalent of `6578616d706c65406578616d706c652e636f6d`. Use this Hex value in the code and covert it dynamically to ACSII.
 
 `    <p onclick="this.innerHTML = 'Email:  ' + getEmail('6578616d706c65406578616d706c652e636f6d')">
 Email: Click to display Email</p>`
