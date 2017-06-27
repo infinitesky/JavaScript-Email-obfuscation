@@ -1,0 +1,30 @@
+<html>
+<body>
+<h3>Contact:</h3>
+<address>
+Mr. XYZ<br>
+<p onclick="this.innerHTML = 'Email:  ' + getEmail('63686f7564686172692e726168756c40796d61696c2e636f6d')">
+Email: Click to display Email</p>
+Mail: 100 ABC St, New City<br>
+New State - 00000, CountryName. <br>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" >
+Phone: Mouse Over Me</div>
+Website: mywebsite.com
+</address> 
+</body>
+
+<script>
+function mOver(text) {
+    text.innerHTML = 'Phone: ' + '+1' + parseInt("2540be3ff",16);
+}
+function mOut(text) {
+    text.innerHTML = "Phone: Mouse Over Me"
+}
+function getEmail(hex) {
+    var str = '';
+    for (var i = 0; i < hex.length; i += 2)
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    return str;
+}
+</script>
+</html>
