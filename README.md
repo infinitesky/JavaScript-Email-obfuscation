@@ -1,5 +1,5 @@
 # JavaScript-Email-obfuscation
-JavaScript email/phone obfuscation produces a normal, clickable email link for users while obscuring the address from spiders
+JavaScript email/phone obfuscation produces a normal, clickable email link for users while obscuring information from spiders
 ## Welcome to the JavaScript email/phone number obfuscation
 JavaScript email obfuscation produces a normal, clickable email link for personal websites. It can obscures the email address, phone OR any text from spiders. Spiders can crawl the source code of web page and harvests email address and phone numbers. This information can be  scrambled, encoded, or otherwise obfuscated using JavaScript. 
 **While very convenient for most users, it does reduce accessibility, e.g. for text-based browsers and screen readers, or for those not using a JavaScript-enabled browser.**
