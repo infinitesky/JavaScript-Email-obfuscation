@@ -38,3 +38,6 @@ Just like above, we can use intial phone number as Hex which can be dynamically 
     <script>`
 
 PS: Few bots with browser automation API like WebDriver/phantom.js have ability to trigger click events and can load and extract the data from the page. This solution will not be able to protect against such bots.
+
+Check out live example here: 
+www.rahulchoudhari.info/contactme.html
